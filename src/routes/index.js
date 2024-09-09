@@ -37,6 +37,7 @@ const tokenExemplos = {
 }
 
 //403 Forbbiden
+//Get - Headers - key= authorization value= tokenAdmin
 router.get('/admin', (req, res)=>{
     const token = req.headers["authorization"]
 
@@ -78,8 +79,7 @@ router.post('/submit', (req, res) => {
 })
 
 //404 Not Found
-
-
+//get - items/id que será pesquisado
 //base de dados fake
 let items=[
     {id: 1, nome: "item1"},
